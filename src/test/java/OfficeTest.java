@@ -14,6 +14,14 @@ public class OfficeTest {
         office = new Office(LocalDate.parse("2007-12-03"));
     }
     @Test
+    public void canGetAbout(){
+        assertThat(office.about()).isEqualTo("About: this is related to office buildings");
+    }
+    @Test
+    public void canGetAbout2(){
+        assertThat(office.about("About office")).isEqualTo("About office");
+    }
+    @Test
     public void canCalculateBuildCost(){
         office.setNumberOfRooms(50);
         assertThat(office.calculateBuildCost(850)).isEqualTo(42500);

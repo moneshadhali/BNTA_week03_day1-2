@@ -13,7 +13,14 @@ public class HallsOfResidenceTest {
     public void setUp(){
         studentResidence = new HallsOfResidence(LocalDate.parse("2018-01-01"));
     }
-
+    @Test
+    public void canGetAbout(){
+        assertThat(studentResidence.about()).isEqualTo("About: this is related to student accommodation buildings which we call it as halls of residence");
+    }
+    @Test
+    public void canGetAbout2(){
+        assertThat(studentResidence.about("About student accommodation")).isEqualTo("About student accommodation");
+    }
     @Test
     public void canCalculateBuildCost(){
         studentResidence.setCapacity(15);

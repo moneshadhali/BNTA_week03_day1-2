@@ -10,6 +10,12 @@ public class Office extends Building{
         this.gym = false;
         this.restaurant = false;
     }
+    public String about(String about){
+        return about;
+    }
+    public String about(){
+        return "About: this is related to office buildings";
+    }
     public double calculateBuildCost(double price){
         double total = price * this.getNumberOfRooms();
         return total;

@@ -10,6 +10,12 @@ public class HallsOfResidence extends Building{
         numberOfPartiesHosted = 0;
         capacity = 0;
     }
+    public String about(String about){
+        return about;
+    }
+    public String about(){
+        return "About: this is related to student accommodation buildings which we call it as halls of residence";
+    }
     public double calculateBuildCost(double price){
         double total = price * this.capacity;
         return total;

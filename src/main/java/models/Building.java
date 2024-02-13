@@ -17,9 +17,7 @@ public abstract class Building implements IInfrastructure {
         this.area = 0;
     }
 
-    public String about(){
-        return "More about this building";
-    }
+    abstract String about();
 
     public void addRoom(int amount){
         this.numberOfRooms += amount;

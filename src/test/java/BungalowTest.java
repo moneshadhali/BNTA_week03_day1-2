@@ -50,7 +50,11 @@ public class BungalowTest {
 
     @Test
     public void canGetAbout(){
-        assertThat(bungalow.about()).isEqualTo("More about this building");
+        assertThat(bungalow.about()).isEqualTo("About: this is related to Bungalow");
+    }
+    @Test
+    public void canGetAbout2(){
+        assertThat(bungalow.about("About Bungalow")).isEqualTo("About Bungalow");
     }
     @Test
     public void canGetNumberOfRooms(){

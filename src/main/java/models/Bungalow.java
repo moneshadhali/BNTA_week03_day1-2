@@ -12,6 +12,12 @@ public class Bungalow extends Building{
         this.swimmingPool = false;
         this.type = type;
     }
+    public String about(String about){
+        return about;
+    }
+    public String about(){
+        return "About: this is related to Bungalow";
+    }
     public double calculateBuildCost(double price){
         double total = price * this.getArea();
         return total;
