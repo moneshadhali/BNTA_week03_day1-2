@@ -17,7 +17,7 @@ public class Bungalow extends Building{
         return total;
     }
     public boolean isCentralHeating() {
-        return centralHeating;
+        return this.centralHeating;
     }
 
     public void setCentralHeating(boolean centralHeating) {
@@ -25,7 +25,7 @@ public class Bungalow extends Building{
     }
 
     public boolean isSwimmingPool() {
-        return swimmingPool;
+        return this.swimmingPool;
     }
 
     public void setSwimmingPool(boolean swimmingPool) {
@@ -33,7 +33,7 @@ public class Bungalow extends Building{
     }
 
     public String getType() {
-        return type;
+        return this.type;
     }
 
     public void setType(String type) {

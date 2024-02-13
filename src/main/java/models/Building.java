@@ -26,7 +26,7 @@ public abstract class Building implements IInfrastructure {
     }
 
     public int getNumberOfRooms() {
-        return numberOfRooms;
+        return this.numberOfRooms;
     }
 
     public void setNumberOfRooms(int numberOfRooms) {
@@ -34,7 +34,7 @@ public abstract class Building implements IInfrastructure {
     }
 
     public LocalDate getDateOfConstruction() {
-        return dateOfConstruction;
+        return this.dateOfConstruction;
     }
 
     public void setDateOfConstruction(LocalDate dateOfConstruction) {
@@ -42,7 +42,7 @@ public abstract class Building implements IInfrastructure {
     }
 
     public String getZipcode() {
-        return zipcode;
+        return this.zipcode;
     }
 
     public void setZipcode(String zipcode) {
@@ -50,7 +50,7 @@ public abstract class Building implements IInfrastructure {
     }
 
     public double getArea() {
-        return area;
+        return this.area;
     }
 
     public void setArea(double area) {

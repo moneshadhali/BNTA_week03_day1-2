@@ -15,7 +15,7 @@ public class Office extends Building{
         return total;
     }
     public boolean isGym() {
-        return gym;
+        return this.gym;
     }
 
     public void setGym(boolean gym) {
@@ -23,7 +23,7 @@ public class Office extends Building{
     }
 
     public boolean isRestaurant() {
-        return restaurant;
+        return this.restaurant;
     }
 
     public void setRestaurant(boolean restaurant) {

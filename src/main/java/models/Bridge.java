@@ -21,7 +21,7 @@ public class Bridge implements IInfrastructure {
     }
 
     public String getMaterialUsed() {
-        return materialUsed;
+        return this.materialUsed;
     }
 
     public void setMaterialUsed(String materialUsed) {
@@ -29,7 +29,7 @@ public class Bridge implements IInfrastructure {
     }
 
     public int getAmountOfMaterial() {
-        return amountOfMaterial;
+        return this.amountOfMaterial;
     }
 
     public void setAmountOfMaterial(int amountOfMaterial) {

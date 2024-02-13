@@ -16,7 +16,7 @@ public class HallsOfResidence extends Building{
     }
 
     public long getNumberOfPartiesHosted() {
-        return numberOfPartiesHosted;
+        return this.numberOfPartiesHosted;
     }
 
     public void setNumberOfPartiesHosted(long numberOfPartiesHosted) {
@@ -24,7 +24,7 @@ public class HallsOfResidence extends Building{
     }
 
     public int getCapacity() {
-        return capacity;
+        return this.capacity;
     }
 
     public void setCapacity(int capacity) {
