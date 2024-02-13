@@ -77,6 +77,11 @@ public class RealEstateCompanyTest {
         assertThat(company.getRevenue()).isEqualTo(0);
     }
     @Test
+    public void canGetRevenue2(){
+        company.setRevenue(900000000);
+        assertThat(company.getRevenue(9000)).isEqualTo(899991000);
+    }
+    @Test
     public void canSetRevenue(){
         company.setRevenue(900000000);
         assertThat(company.getRevenue()).isEqualTo(900000000);

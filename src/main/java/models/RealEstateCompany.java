@@ -24,7 +24,7 @@ public class RealEstateCompany {
         this.properties.add(property);
     }
     public String getName() {
-        return name;
+        return this.name;
     }
 
     public void setName(String name) {
@@ -32,7 +32,7 @@ public class RealEstateCompany {
     }
 
     public String getOwner() {
-        return owner;
+        return this.owner;
     }
 
     public void setOwner(String owner) {
@@ -40,7 +40,7 @@ public class RealEstateCompany {
     }
 
     public LocalDate getDateOfEstablishment() {
-        return dateOfEstablishment;
+        return this.dateOfEstablishment;
     }
 
     public void setDateOfEstablishment(LocalDate dateOfEstablishment) {
@@ -48,7 +48,7 @@ public class RealEstateCompany {
     }
 
     public ArrayList<IInfrastructure> getProperties() {
-        return properties;
+        return this.properties;
     }
 
     public void setProperties(ArrayList<IInfrastructure> properties) {
@@ -56,7 +56,11 @@ public class RealEstateCompany {
     }
 
     public double getRevenue() {
-        return revenue;
+        return this.revenue;
+    }
+
+    public double getRevenue(double lossMade) {
+        return this.revenue-lossMade;
     }
 
     public void setRevenue(double revenue) {
