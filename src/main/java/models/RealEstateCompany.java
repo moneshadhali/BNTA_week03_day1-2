@@ -16,12 +16,13 @@ public class RealEstateCompany {
         this.name = name;
         this.owner = owner;
         this.dateOfEstablishment = date;
+        this.properties = new ArrayList<IInfrastructure>();
+        this.revenue = 0;
     }
 
-    public void addProperty(Building building){
-        this.properties.add(building);
+    public void addProperty(IInfrastructure property){
+        this.properties.add(property);
     }
-
     public String getName() {
         return name;
     }
